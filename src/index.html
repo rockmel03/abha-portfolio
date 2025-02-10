@@ -11,101 +11,172 @@
 <body>
 
 
-    <main>
+    <main class="bg-zinc-950 text-white py-[0.1px]">
 
-        <header>
-            <nav class="container p-40 py-2 flex justify-between">
-                <a href="/" id="logo">
-                    <span>&copy;</span>
-                    <div id="outer">
-                        <div id="inner">
-                            <span>Designs by Abha </span>
-                            <span>Abha Melkani </span>
+        <header data-scroll data-scroll-section class="h-[10vh] w-full flex items-center">
+            <nav class="container px-[3vw] py-2 flex justify-between">
+                <a href="/" id="logo" class="flex gap-1">
+                    <h1 class="text-lg font-medium flex gap-[0.5em] items-center">
+                        <span>—</span>
+                        <div id="outer">
+                            <div id="inner">
+                                <!-- <span>Designs by </span> -->
+                                <span>Abha </span>
+                                <span>Melkani </span>
+                            </div>
                         </div>
-                    </div>
+                    </h1>
                 </a>
-                <ul>
-                    <li><a href="#">
+                <ul class="hidden md:flex items-center gap-20">
+                    <li><a href="#work">
                             <div class="megnetic">Work</div>
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="#about">
                             <div class="megnetic">About</div>
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="#contact">
                             <div class="megnetic">Contact</div>
                         </a></li>
                 </ul>
             </nav>
         </header>
 
-        <section data-scroll data-scroll-section id="hero">
-            <header data-scroll data-scroll-section>
+        <section data-scroll data-scroll-section id="hero" class="h-[calc(100vh-10vh)]">
 
-            </header>
-            <div class="container">
-                <div class="hero-top">
-                    <div class="hero-top-left">
-                        <h1 class="hero-top-heading">
-                            <div><span>Where</span></div>
-                            <div style="color:#FFDD00"><span>Creativity</span></div>
-                            <div><span>Meets</span></div>
-                            <div><span>Functionality <span style="color:#FFDD00">in</span></span></div>
-                            <div><span><span style="color:#FFDD00">Fashion</span> &</span></div>
-                            <div><span>Design</span></div>
-                        </h1>
-                    </div>
-                    <div class="hero-top-right">
-                        <div class="hero-top-right-img-container"></div>
-                    </div>
+            <div class="hero-top container px-[3vw] py-5 pt-7 md:py-10 w-full h-full flex items-center">
+                <div class="hero-top-left">
+                    <h1 class="hero-top-heading text-5xl md:text-7xl font-medium">
+                        <div><span>Where</span></div>
+                        <div><span class="text-yellow-400">Creativity</span></div>
+                        <div><span>Meets</span></div>
+                        <div><span>Functionality <span class="text-yellow-400">in</span></span></div>
+                        <div><span><span class="text-yellow-400">Fashion</span> &</span></div>
+                        <div><span>Design</span></div>
+                    </h1>
+                </div>
+                <div class="hero-top-right ">
+                    <div class="hero-top-right-img-container"></div>
                 </div>
             </div>
-            <div class="hero-marquee-container">
-                <h1 class="hero-marquee-heading marquee"> Abha Melkani <span>—</span></h1>
-            </div>
+
+
         </section>
 
-        <section data-scroll data-scroll-section id="about">
-
-            <div data-scroll data-scroll-speed="1" class="content container">
-                <h2 class="content-heading">The Art of
-                    Accessory <br>
-                    Design</h2>
-                <p class="content-para">Abha is a visionary fashion designer
-                    specializing in handcrafted accessories
-                    that
-                    blend style,
-                    sophistication, and functionality. With years of experience in the fashion industry, she believes
-                    that accessories are more than just add-ons—they are statements of personality and elegance. Every
-                    piece in her collection is crafted with high-quality materials, ensuring a perfect balance of
-                    durability and luxury.</p>
+        <section data-scroll data-scroll-section id="about" class="min-h-[100vh] ">
+            <div class="hero-marquee-container py-5">
+                <h1 class="hero-marquee-heading marquee text-8xl"> Abha Melkani<span
+                        class="inline-block mx-[1em]">—</span></h1>
             </div>
+
+            <div class="container px-[3vw] py-5 ">
+                <h2 class="text-5xl font-light">Who I Am</h2>
+                <p class="text-xl max-w-2xl py-5">
+                    I’m a passionate Lifestyle & Fashion Accessories designer with a deep understanding of product
+                    design, UI/UX, graphic design, and material innovation. My design philosophy revolves around
+                    creativity, functionality, and trend-forward aesthetics.</p>
+            </div>
+            <div class="container px-[3vw] py-5 ">
+                <h2 class="text-5xl font-light">What I Do</h2>
+                <p class="text-xl max-w-2xl py-5">
+                    From concept sketching to final production, I specialize in designing accessories that blend style
+                    and practicality. My work is rooted in research, material exploration, and a strong creative vision.
+                </p>
+            </div>
+
+
+            <div class="container px-[3vw] py-5 ">
+                <h2 class="text-5xl font-semibold"> Things I'm good at</h2>
+                <h4 class="text-2xl mt-2">skills, interests, passion and hobbies</h4>
+                <div class="my-5">
+                    <h2>Skills & Expertise</h2>
+                    <ul class="">
+                        <li class="list-disc my-2">
+                            <h4 class="text-xl font-semibold">Creative Design Process</h4>
+                            <p class="text-lg opacity-90">From inspiration to execution</p>
+                        </li>
+                        <li class="list-disc my-2">
+                            <h4 class="text-xl font-semibold">Sketching & Ideation </h4>
+                            <p class="text-lg opacity-90">Transforming concepts into tangible
+                                designs</p>
+                        </li>
+
+                        <li class="list-disc my-2">
+                            <h4 class="text-xl font-semibold">Material Handling</h4>
+                            <p class="text-lg opacity-90">Understanding textures, finishes, and
+                                sustainability</p>
+                        </li>
+                        <li class="list-disc my-2">
+                            <h4 class="text-xl font-semibold">Trend Research</h4>
+                            <p class="text-lg opacity-90">Staying ahead in fashion & product innovation</p>
+                        </li>
+                        <li class="list-disc my-2">
+                            <h4 class="text-xl font-semibold">Innovative Thinking</h4>
+                            <p class="text-lg opacity-90">Crafting unique, user-focused designs</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
 
         </section>
 
         <section data-scroll data-scroll-section id="work">
-            <div data-scroll data-scroll-speed="1" class="content container">
-                <h2 class="content-heading">Crafted for Elegance, <br>Designed for You</h2>
-                <p class="content-para">From chic handbags to versatile wallets, stylish purses to statement belts—every
-                    creation by Abha
-                    tells a story of craftsmanship and innovation. Her designs are inspired by modern aesthetics while
-                    staying true to timeless fashion. Browse her portfolio and discover pieces that resonate with your
-                    style.</p>
+            <div class="container px-[3vw] py-5 ">
+                <h2 class="text-6xl font-light">
+                    <div class="text-[0.5em]">A Showcase of </div>
+                    <div class="font-medium">My Creative Journey</div>
+                </h2>
+                <p class="text-xl max-w-2xl py-5">
+                    Explore my portfolio featuring handcrafted designs, digital concepts, and market-ready accessories.
+                    Each piece is a reflection of my design sensibility, attention to detail, and passion for
+                    innovation.
+                </p>
+            </div>
+            <div class="container px-[3vw] py-5 ">
+                <ul>
+                    <li>👜 <strong>Accessory Design</strong> – Bags, wallets, belts & more</li>
+                    <li>🎨 <strong>Graphic & UI/UX Design</strong> – Branding, visuals & user experiences</li>
+                    <li>📐 <strong>Product Development</strong> – From sketches to manufacturing</li>
+                </ul>
             </div>
 
-            <div class="recent-work container">
-                <h4>recent work</h4>
+            <div class="recent-work container px-[3vw] py-5">
+                <h4 class="font-semibold opacity-50">recent work</h4>
 
-                <div class="row-container">
-                    <!-- <div class="row">
-                        <h3>
+                <div class="row-container py-10 ">
+                    <div class="row border-t py-10 px-10 md:grid grid-cols-6">
+                        <h3 class="text-5xl col-span-4">
                             SHEFLARE
                         </h3>
-                        <div></div>
-                        <p>UI/UX design</p>
-                    </div> -->
+                        <div class="absolute"></div>
+                        <p class="col-span-2">UI/UX design</p>
+                    </div>
+                    <div class="row border-t py-10 px-10 md:grid grid-cols-6">
+                        <h3 class="text-5xl col-span-4">
+                            SHEFLARE
+                        </h3>
+                        <div class="absolute"></div>
+                        <p class="col-span-2">UI/UX design</p>
+                    </div>
+                    <div class="row border-t py-10 px-10 md:grid grid-cols-6">
+                        <h3 class="text-5xl col-span-4">
+                            SHEFLARE
+                        </h3>
+                        <div class="absolute"></div>
+                        <p class="col-span-2">UI/UX design</p>
+                    </div>
+                    <div class="row border-t py-10 px-10 md:grid grid-cols-6">
+                        <h3 class="text-5xl col-span-4">
+                            SHEFLARE
+                        </h3>
+                        <div class="absolute"></div>
+                        <p class="col-span-2">UI/UX design</p>
+                    </div>
+                    <hr>
                 </div>
-                <div class="btn-container">
-                    <button class="show-more-btn">
+                <div class="btn-container grid place-items-center py-4">
+                    <button
+                        class="show-more-btn px-5 py-3 rounded-full text-sm font-semibold  border-2 border-zinc-500 text-zinc-500  hover:text-black hover:bg-zinc-500 transition duration-300">
                         Show more
                     </button>
                 </div>
@@ -113,52 +184,67 @@
         </section>
 
         <section data-scroll data-scroll-section id="gallary">
-            <div class="gallary-container">
-                <div class="gallary-row row-1">
-                    <div class="gallary-card">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+
+            <div class="gallary-container overflow-x-hidden">
+
+                <div class="gallary-row row-1 flex -translate-x-40">
+
+                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+                        <img class="w-full h-full object-cover"
+                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
                             alt="">
                     </div>
-                    <div class="gallary-card">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+                        <img class="w-full h-full object-cover"
+                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
                             alt="">
                     </div>
-                    <div class="gallary-card">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+                        <img class="w-full h-full object-cover"
+                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
                             alt="">
                     </div>
-                    <div class="gallary-card">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
-                            alt="">
-                    </div>
-                </div>
-                <div class="gallary-row row-2">
-                    <div class="gallary-card">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
-                            alt="">
-                    </div>
-                    <div class="gallary-card">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
-                            alt="">
-                    </div>
-                    <div class="gallary-card">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
-                            alt="">
-                    </div>
-                    <div class="gallary-card">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+                        <img class="w-full h-full object-cover"
+                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
                             alt="">
                     </div>
                 </div>
+                <div class="gallary-row row-2 flex translate-x-40">
+
+                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+                        <img class="w-full h-full object-cover"
+                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+                            alt="">
+                    </div>
+                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+                        <img class="w-full h-full object-cover"
+                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+                            alt="">
+                    </div>
+                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+                        <img class="w-full h-full object-cover"
+                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+                            alt="">
+                    </div>
+                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+                        <img class="w-full h-full object-cover"
+                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+                            alt="">
+                    </div>
+                </div>
+
             </div>
+
         </section>
 
         <section data-scroll data-scroll-section id="contact">
-            <div data-scroll data-scroll-speed="1" class="content container">
-                <h2 class="content-heading">Let’s Connect!
-                </h2>
-                <p class="content-para">Looking for a custom design or want to collaborate? Abha would love
-                    to hear from you. Get in touch to discuss design inquiries, orders, or styling tips.</p>
+            <div class="container px-[3vw] py-5 ">
+                <h2 class="text-5xl font-light">Let’s collaborate!</h2>
+                <p class="text-xl max-w-2xl py-5">
+                    LookWhether you’re looking for custom accessory designs, product development
+                    insights, or creative consultation, I’d love to hear from you.
+                </p>
             </div>
 
         </section>
