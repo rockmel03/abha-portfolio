@@ -12,8 +12,9 @@
 
 
     <main>
+
         <header>
-            <nav>
+            <nav class="container p-40 py-2 flex justify-between">
                 <a href="/" id="logo">
                     <span>&copy;</span>
                     <div id="outer">
@@ -36,25 +37,41 @@
                 </ul>
             </nav>
         </header>
-        <section id="hero">
-            <div>
-                <div>
-                    <div></div>
-                    <h2>Where Fashion Meets <br> Craftsmanship</h2>
+
+        <section data-scroll data-scroll-section id="hero">
+            <header data-scroll data-scroll-section>
+
+            </header>
+            <div class="container">
+                <div class="hero-top">
+                    <div class="hero-top-left">
+                        <h1 class="hero-top-heading">
+                            <div><span>Where</span></div>
+                            <div style="color:#FFDD00"><span>Creativity</span></div>
+                            <div><span>Meets</span></div>
+                            <div><span>Functionality <span style="color:#FFDD00">in</span></span></div>
+                            <div><span><span style="color:#FFDD00">Fashion</span> &</span></div>
+                            <div><span>Design</span></div>
+                        </h1>
+                    </div>
+                    <div class="hero-top-right">
+                        <div class="hero-top-right-img-container"></div>
+                    </div>
                 </div>
-                <div class="hero-heading-container">
-                    <h1 class="hero-heading marquee">Abha Melkani -</h1>
-                </div>
+            </div>
+            <div class="hero-marquee-container">
+                <h1 class="hero-marquee-heading marquee"> Abha Melkani <span>—</span></h1>
             </div>
         </section>
 
-        <section id="about">
+        <section data-scroll data-scroll-section id="about">
 
-            <div class="content">
+            <div data-scroll data-scroll-speed="1" class="content container">
                 <h2 class="content-heading">The Art of
-                    Accessory
+                    Accessory <br>
                     Design</h2>
-                <p class="content-para">Abha is a visionary fashion designer specializing in handcrafted accessories
+                <p class="content-para">Abha is a visionary fashion designer
+                    specializing in handcrafted accessories
                     that
                     blend style,
                     sophistication, and functionality. With years of experience in the fashion industry, she believes
@@ -65,9 +82,9 @@
 
         </section>
 
-        <section id="work">
-            <div class="content">
-                <h2 class="content-heading">Crafted for Elegance, Designed for You</h2>
+        <section data-scroll data-scroll-section id="work">
+            <div data-scroll data-scroll-speed="1" class="content container">
+                <h2 class="content-heading">Crafted for Elegance, <br>Designed for You</h2>
                 <p class="content-para">From chic handbags to versatile wallets, stylish purses to statement belts—every
                     creation by Abha
                     tells a story of craftsmanship and innovation. Her designs are inspired by modern aesthetics while
@@ -75,7 +92,7 @@
                     style.</p>
             </div>
 
-            <div class="recent-work">
+            <div class="recent-work container">
                 <h4>recent work</h4>
 
                 <div class="row-container">
@@ -95,7 +112,7 @@
             </div>
         </section>
 
-        <section id="gallary">
+        <section data-scroll data-scroll-section id="gallary">
             <div class="gallary-container">
                 <div class="gallary-row row-1">
                     <div class="gallary-card">
@@ -136,11 +153,21 @@
             </div>
         </section>
 
-     
+        <section data-scroll data-scroll-section id="contact">
+            <div data-scroll data-scroll-speed="1" class="content container">
+                <h2 class="content-heading">Let’s Connect!
+                </h2>
+                <p class="content-para">Looking for a custom design or want to collaborate? Abha would love
+                    to hear from you. Get in touch to discuss design inquiries, orders, or styling tips.</p>
+            </div>
+
+        </section>
 
     </main>
+    <!-- locomotivejs cdns -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <!-- gsap cdns -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
         integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
