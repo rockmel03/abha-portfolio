@@ -90,3 +90,73 @@ function initGallaryAnime() {
     "flag1"
   );
 }
+
+showRecentWorkAndAnimate();
+function showRecentWorkAndAnimate() {
+  /*
+ <div class="row group/row border-b last:border-b h-[20vh] relative px-10 md:grid grid-cols-6 items-center">
+      <h3 class="text-5xl col-span-4">
+          SHEFLARE
+      </h3>
+      <p class="col-span-2">UI/UX design</p>
+      <div class="row-img-container absolute z-10 h-full aspect-square bg-red-50  "></div>
+  </div>;
+*/
+
+  const recentWorks = [
+    { title: "SHEFLARE", type: "UI/UX design", imgURL: "" },
+    { title: "PYRE", type: "UI/UX design", imgURL: "" },
+    { title: "ZOUK", type: "UI/UX design", imgURL: "" },
+    { title: "BUS BUDDY", type: "UI/UX design", imgURL: "" },
+  ];
+
+  const workContainer = document.querySelector(".row-container");
+
+  recentWorks.forEach((work) => {
+    const div = document.createElement("div");
+    div.classList.add(
+      ..."row group/row border-b last:border-b relative py-10 px-10 md:grid grid-cols-6 items-center".split(
+        " "
+      )
+    );
+
+    div.innerHTML = `
+        <h3 class="text-7xl col-span-4">
+            ${work.title}
+        </h3>
+        <div class="row-img-container absolute z-10 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 h-full aspect-[4/3] bg-red-50 ">
+          <img src="${work.imgURL}" alt="${work.title}"/>
+        </div>
+        <p class="col-span-2">${work.type}</p>
+        `;
+
+    workContainer.appendChild(div);
+
+    const imgContainer = div.querySelector(".row-img-container");
+
+    let prevPosX = 0;
+
+    div.addEventListener("mousemove", (event) => {
+      const { clientX, clientY } = event;
+      const divBoundings = div.getBoundingClientRect();
+
+      const diffX = clientX - prevPosX;
+      prevPosX = clientX;
+
+      gsap.to(imgContainer, {
+        scale: 1,
+        opacity: 1,
+        left: clientX -divBoundings.left,
+        top: clientY - divBoundings.top,
+        rotate: gsap.utils.clamp(-20, 20, diffX),
+      });
+    });
+
+    div.addEventListener("mouseout", (event) => {
+      gsap.to(imgContainer, {
+        scale: 0,
+        opacity: 0,
+      });
+    });
+  });
+}
