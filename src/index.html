@@ -1,260 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Abha</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
-
+  <body>
     <main class="bg-zinc-950 text-white py-[0.1px]">
-
-        <header data-scroll data-scroll-section class="h-[10vh] w-full flex items-center">
-            <nav class="container px-[3vw] py-2 flex justify-between">
-                <a href="/" id="logo" class="flex gap-1">
-                    <h1 class="text-lg font-medium flex gap-[0.5em] items-center">
-                        <span>—</span>
-                        <div id="outer">
-                            <div id="inner">
-                                <!-- <span>Designs by </span> -->
-                                <span>Abha </span>
-                                <span>Melkani </span>
-                            </div>
-                        </div>
-                    </h1>
-                </a>
-                <ul class="hidden md:flex items-center gap-20">
-                    <li><a href="#work">
-                            <div class="megnetic">Work</div>
-                        </a></li>
-                    <li><a href="#about">
-                            <div class="megnetic">About</div>
-                        </a></li>
-                    <li><a href="#contact">
-                            <div class="megnetic">Contact</div>
-                        </a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section data-scroll data-scroll-section id="hero" class="h-[calc(100vh-10vh)]">
-
-            <div class="hero-top container px-[3vw] py-5 pt-7 md:py-10 w-full h-full flex items-center">
-                <div class="hero-top-left">
-                    <h1 class="hero-top-heading text-5xl md:text-7xl font-medium">
-                        <div class="overflow-hidden w-fit h-fit">
-                            <span class=" inline-block leading-[1.1]">Where</span>
-                        </div>
-                        <div class="overflow-hidden w-fit h-fit"><span
-                                class="text-yellow-400 inline-block leading-[1.1]">Creativity</span>
-                        </div>
-                        <div class="overflow-hidden w-fit h-fit">
-                            <span class=" inline-block leading-[1.1]">Meets</span>
-                        </div>
-                        <div class="overflow-hidden w-fit h-fit">
-                            <span class=" inline-block leading-[1.1]">Functionality
-                                <span class="text-yellow-400">in</span></span>
-                        </div>
-                        <div class="overflow-hidden w-fit h-fit">
-                            <span class=" inline-block leading-[1.1]"><span class="text-yellow-400">Fashion</span>
-                                &</span>
-                        </div>
-                        <div class="overflow-hidden w-fit h-fit">
-                            <span class=" inline-block leading-[1.1]">Design</span>
-                        </div>
-                    </h1>
+      <header
+        data-scroll
+        data-scroll-section
+        class="h-[10vh] w-full flex items-center"
+      >
+        <nav class="container px-[3vw] py-2 flex justify-between">
+          <a href="/" id="logo" class="flex gap-1">
+            <h1 class="text-lg font-medium flex gap-[0.5em] items-center">
+              <span>—</span>
+              <div id="outer">
+                <div id="inner">
+                  <!-- <span>Designs by </span> -->
+                  <span>Abha </span>
+                  <span>Melkani </span>
                 </div>
-                <div class="hero-top-right ">
-                    <div class="hero-top-right-img-container"></div>
+              </div>
+            </h1>
+          </a>
+          <ul class="hidden md:flex items-center gap-20">
+            <li>
+              <a href="#work">
+                <div class="megnetic">Work</div>
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                <div class="megnetic">About</div>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">
+                <div class="megnetic">Contact</div>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section
+        data-scroll
+        data-scroll-section
+        id="hero"
+        class="h-[calc(100vh-10vh)]"
+      >
+        <div
+          class="hero-top container px-[3vw] py-5 pt-7 md:py-10 w-full h-full flex items-center"
+        >
+          <div class="hero-top-left">
+            <h1
+              class="hero-top-heading font-roboto text-5xl md:text-6xl font-medium"
+            >
+              <div class="w-fit overflow-hidden">
+                <span class="inline-block leading-[1.1]"
+                  >Where <span class="text-yellow-500">Creativity</span></span
+                >
+              </div>
+              <div class="w-fit overflow-hidden">
+                <span class="inline-block leading-[1.1]"
+                  >Meets Functionality</span
+                >
+              </div>
+              <div class="w-fit overflow-hidden">
+                <span class="inline-block leading-[1.3]">
+                  <span class="text-yellow-500">in </span>
+                  <span class="text-yellow-500">Fashion </span>
+                  &
+                  <span class="font-love">Design</span>
+                </span>
+              </div>
+            </h1>
+
+            <p class="text-lg max-w-2xl py-5">
+              Bringing ideas to life through innovative design, trend-focused
+              aesthetics, and a seamless blend of artistry and practicality.
+              Explore my journey in fashion accessories, product design, and
+              visual storytelling.
+            </p>
+            <div class="hero-btns flex items-center gap-4">
+              <button
+                class="px-5 py-2 rounded-md font-medium border-2 border-zinc-200 bg-zinc-200 text-black hover:bg-transparent hover:text-zinc-200 duration-200 ease"
+              >
+                <div class="flex items-center gap-[0.5em]">
+                  <span> Hire me </span>
+                  <span class="w-[1.2em]"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M10 6V8H5V19H16V14H18V20C18 20.5523 17.5523 21 17 21H4C3.44772 21 3 20.5523 3 20V7C3 6.44772 3.44772 6 4 6H10ZM21 3V11H19L18.9999 6.413L11.2071 14.2071L9.79289 12.7929L17.5849 5H13V3H21Z"
+                      ></path>
+                    </svg>
+                  </span>
                 </div>
+              </button>
+              <a
+                href="#contact"
+                class="relative py-1 font-medium after:w-0 after:h-[3px] after:rounded-full after:bg-zinc-500 after:absolute after:left-0 after:origin-left after:duration-200 after:bottom-0 hover:after:w-full"
+              >
+                Contact
+              </a>
             </div>
+          </div>
+          <div class="hero-top-right">
+            <div class="hero-top-right-img-container"></div>
+          </div>
+        </div>
+      </section>
 
+      <section data-scroll data-scroll-section id="about" class="min-h-[100vh]">
+        <div class="hero-marquee-container py-5">
+          <h1 class="hero-marquee-heading marquee text-8xl">
+            Abha Melkani<span class="inline-block mx-[1em]">—</span>
+          </h1>
+        </div>
 
-        </section>
+        <div class="container px-[3vw] py-5">
+          <h2 class="text-5xl font-light">Who I Am</h2>
+          <p class="typo text-xl max-w-2xl py-5">
+            I’m a passionate Lifestyle & Fashion Accessories designer with a
+            deep understanding of product design, UI/UX, graphic design, and
+            material innovation. My design philosophy revolves around
+            creativity, functionality, and trend-forward aesthetics.
+          </p>
+        </div>
+        <div class="container px-[3vw] py-5">
+          <h2 class="text-5xl font-light">What I Do</h2>
+          <p class="typo text-xl max-w-2xl py-5">
+            From concept sketching to final production, I specialize in
+            designing accessories that blend style and practicality. My work is
+            rooted in research, material exploration, and a strong creative
+            vision.
+          </p>
+        </div>
 
-        <section data-scroll data-scroll-section id="about" class="min-h-[100vh] ">
-            <div class="hero-marquee-container py-5">
-                <h1 class="hero-marquee-heading marquee text-8xl"> Abha Melkani<span
-                        class="inline-block mx-[1em]">—</span></h1>
-            </div>
-
-            <div class="container px-[3vw] py-5 ">
-                <h2 class="text-5xl font-light">Who I Am</h2>
-                <p class="typo text-xl max-w-2xl py-5">
-                    I’m a passionate Lifestyle & Fashion Accessories designer with a deep understanding of product
-                    design, UI/UX, graphic design, and material innovation. My design philosophy revolves around
-                    creativity, functionality, and trend-forward aesthetics.</p>
-            </div>
-            <div class="container px-[3vw] py-5 ">
-                <h2 class="text-5xl font-light">What I Do</h2>
-                <p class="typo text-xl max-w-2xl py-5">
-                    From concept sketching to final production, I specialize in designing accessories that blend style
-                    and practicality. My work is rooted in research, material exploration, and a strong creative vision.
+        <div class="container px-[3vw] py-5">
+          <h2 class="text-5xl font-semibold">Things I'm good at</h2>
+          <h4 class="text-2xl mt-2">skills, interests, passion and hobbies</h4>
+          <div class="my-5">
+            <h2>Skills & Expertise</h2>
+            <ul class="">
+              <li class="list-disc my-2">
+                <h4 class="text-xl font-semibold">Creative Design Process</h4>
+                <p class="text-lg opacity-90">From inspiration to execution</p>
+              </li>
+              <li class="list-disc my-2">
+                <h4 class="text-xl font-semibold">Sketching & Ideation</h4>
+                <p class="text-lg opacity-90">
+                  Transforming concepts into tangible designs
                 </p>
-            </div>
+              </li>
 
-
-            <div class="container px-[3vw] py-5 ">
-                <h2 class="text-5xl font-semibold"> Things I'm good at</h2>
-                <h4 class="text-2xl mt-2">skills, interests, passion and hobbies</h4>
-                <div class="my-5">
-                    <h2>Skills & Expertise</h2>
-                    <ul class="">
-                        <li class="list-disc my-2">
-                            <h4 class="text-xl font-semibold">Creative Design Process</h4>
-                            <p class="text-lg opacity-90">From inspiration to execution</p>
-                        </li>
-                        <li class="list-disc my-2">
-                            <h4 class="text-xl font-semibold">Sketching & Ideation </h4>
-                            <p class="text-lg opacity-90">Transforming concepts into tangible
-                                designs</p>
-                        </li>
-
-                        <li class="list-disc my-2">
-                            <h4 class="text-xl font-semibold">Material Handling</h4>
-                            <p class="text-lg opacity-90">Understanding textures, finishes, and
-                                sustainability</p>
-                        </li>
-                        <li class="list-disc my-2">
-                            <h4 class="text-xl font-semibold">Trend Research</h4>
-                            <p class="text-lg opacity-90">Staying ahead in fashion & product innovation</p>
-                        </li>
-                        <li class="list-disc my-2">
-                            <h4 class="text-xl font-semibold">Innovative Thinking</h4>
-                            <p class="text-lg opacity-90">Crafting unique, user-focused designs</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-
-        </section>
-
-        <section data-scroll data-scroll-section id="work">
-            <div class="container px-[3vw] py-5 ">
-                <h2 class="text-6xl font-light">
-                    <div class="text-[0.5em]">A Showcase of </div>
-                    <div class="font-medium">My Creative Journey</div>
-                </h2>
-                <p class="typo text-xl max-w-2xl py-5">
-                    Explore my portfolio featuring handcrafted designs, digital concepts, and market-ready accessories.
-                    Each piece is a reflection of my design sensibility, attention to detail, and passion for
-                    innovation.
+              <li class="list-disc my-2">
+                <h4 class="text-xl font-semibold">Material Handling</h4>
+                <p class="text-lg opacity-90">
+                  Understanding textures, finishes, and sustainability
                 </p>
-            </div>
-            <div class="container px-[3vw] py-5 ">
-                <ul>
-                    <li>👜 <strong>Accessory Design</strong> – Bags, wallets, belts & more</li>
-                    <li>🎨 <strong>Graphic & UI/UX Design</strong> – Branding, visuals & user experiences</li>
-                    <li>📐 <strong>Product Development</strong> – From sketches to manufacturing</li>
-                </ul>
-            </div>
+              </li>
+              <li class="list-disc my-2">
+                <h4 class="text-xl font-semibold">Trend Research</h4>
+                <p class="text-lg opacity-90">
+                  Staying ahead in fashion & product innovation
+                </p>
+              </li>
+              <li class="list-disc my-2">
+                <h4 class="text-xl font-semibold">Innovative Thinking</h4>
+                <p class="text-lg opacity-90">
+                  Crafting unique, user-focused designs
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-            <div class="recent-work container px-[3vw] py-5">
-                <h4 class="font-semibold opacity-50">recent work</h4>
+      <section data-scroll data-scroll-section id="work">
+        <div class="container px-[3vw] py-5">
+          <h2 class="text-6xl font-light">
+            <div class="text-[0.5em]">A Showcase of</div>
+            <div class="font-medium">My Creative Journey</div>
+          </h2>
+          <p class="typo text-xl max-w-2xl py-5">
+            Explore my portfolio featuring handcrafted designs, digital
+            concepts, and market-ready accessories. Each piece is a reflection
+            of my design sensibility, attention to detail, and passion for
+            innovation.
+          </p>
+        </div>
+        <div class="container px-[3vw] py-5">
+          <ul>
+            <li>
+              👜 <strong>Accessory Design</strong> – Bags, wallets, belts & more
+            </li>
+            <li>
+              🎨 <strong>Graphic & UI/UX Design</strong> – Branding, visuals &
+              user experiences
+            </li>
+            <li>
+              📐 <strong>Product Development</strong> – From sketches to
+              manufacturing
+            </li>
+          </ul>
+        </div>
 
-                <div class="row-container py-10 ">
-                    <!-- <div class="row border-t py-10 px-10 md:grid grid-cols-6">
+        <div class="recent-work container px-[3vw] py-5">
+          <h4 class="font-semibold opacity-50">recent work</h4>
+
+          <div class="row-container py-10">
+            <!-- <div class="row border-t py-10 px-10 md:grid grid-cols-6">
                         <h3 class="text-5xl col-span-4">
                             SHEFLARE
                         </h3>
                         <div class="absolute"></div>
                         <p class="col-span-2">UI/UX design</p>
                     </div> -->
-                    <hr>
-                </div>
-                <div class="btn-container grid place-items-center py-4">
-                    <button
-                        class="show-more-btn px-5 py-3 rounded-full text-sm font-semibold  border-2 border-zinc-500 text-zinc-500  hover:text-black hover:bg-zinc-500 transition duration-300">
-                        Show more
-                    </button>
-                </div>
+            <hr />
+          </div>
+          <div class="btn-container grid place-items-center py-4">
+            <button
+              class="show-more-btn px-5 py-3 rounded-full text-sm font-semibold border-2 border-zinc-500 text-zinc-500 hover:text-black hover:bg-zinc-500 transition duration-300"
+            >
+              Show more
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section data-scroll data-scroll-section id="gallary">
+        <div class="gallary-container overflow-x-hidden">
+          <div class="gallary-row row-1 flex -translate-x-40">
+            <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+              <img
+                class="w-full h-full object-cover"
+                src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+                alt=""
+              />
             </div>
-        </section>
-
-        <section data-scroll data-scroll-section id="gallary">
-
-            <div class="gallary-container overflow-x-hidden">
-
-                <div class="gallary-row row-1 flex -translate-x-40">
-
-                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
-                        <img class="w-full h-full object-cover"
-                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
-                            alt="">
-                    </div>
-                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
-                        <img class="w-full h-full object-cover"
-                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
-                            alt="">
-                    </div>
-                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
-                        <img class="w-full h-full object-cover"
-                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
-                            alt="">
-                    </div>
-                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
-                        <img class="w-full h-full object-cover"
-                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
-                            alt="">
-                    </div>
-                </div>
-                <div class="gallary-row row-2 flex translate-x-40">
-
-                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
-                        <img class="w-full h-full object-cover"
-                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
-                            alt="">
-                    </div>
-                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
-                        <img class="w-full h-full object-cover"
-                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
-                            alt="">
-                    </div>
-                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
-                        <img class="w-full h-full object-cover"
-                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
-                            alt="">
-                    </div>
-                    <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
-                        <img class="w-full h-full object-cover"
-                            src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
-                            alt="">
-                    </div>
-                </div>
-
+            <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+              <img
+                class="w-full h-full object-cover"
+                src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+                alt=""
+              />
             </div>
-
-        </section>
-
-        <section data-scroll data-scroll-section id="contact">
-            <div class="container px-[3vw] py-5 ">
-                <h2 class="text-5xl font-light">Let’s collaborate!</h2>
-                <p class="typo text-xl max-w-2xl py-5">
-                    LookWhether you’re looking for custom accessory designs, product development
-                    insights, or creative consultation, I’d love to hear from you.
-                </p>
+            <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+              <img
+                class="w-full h-full object-cover"
+                src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+                alt=""
+              />
             </div>
+            <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+              <img
+                class="w-full h-full object-cover"
+                src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="gallary-row row-2 flex translate-x-40">
+            <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+              <img
+                class="w-full h-full object-cover"
+                src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+                alt=""
+              />
+            </div>
+            <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+              <img
+                class="w-full h-full object-cover"
+                src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+                alt=""
+              />
+            </div>
+            <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+              <img
+                class="w-full h-full object-cover"
+                src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+                alt=""
+              />
+            </div>
+            <div class="gallary-card flex-shrink-0 w-[28vw] aspect-[4/3] p-4">
+              <img
+                class="w-full h-full object-cover"
+                src="https://static.vecteezy.com/system/resources/thumbnails/005/048/106/small_2x/black-and-yellow-grunge-modern-thumbnail-background-free-vector.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
-
+      <section data-scroll data-scroll-section id="contact">
+        <div class="container px-[3vw] py-5">
+          <h2 class="text-5xl font-light">Let’s collaborate!</h2>
+          <p class="typo text-xl max-w-2xl py-5">
+            LookWhether you’re looking for custom accessory designs, product
+            development insights, or creative consultation, I’d love to hear
+            from you.
+          </p>
+        </div>
+      </section>
     </main>
     <!-- locomotivejs cdns -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <!-- gsap cdns -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script defer src="script.js"></script>
-
-</body>
-
+  </body>
 </html>

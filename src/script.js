@@ -9,8 +9,18 @@ function initHomePageAnime() {
   });
 
   tl.from(".hero-top-heading > div> span", {
-    x: "-100%",
+    y: "100%",
     stagger: 0.1,
+    duration: 0.5,
+    ease: Power4,
+  });
+  tl.from(".hero-top p", {
+    opacity: 0,
+    duration: 0.5,
+    ease: Power4,
+  });
+  tl.from(".hero-btns", {
+    opacity: 0,
     duration: 0.5,
     ease: Power4,
   });
@@ -190,7 +200,6 @@ function initParaTypoEffect() {
       .split("")
       .forEach((item) => (innerHTML += `<span>${item}</span>`));
 
-    console.log(textContent);
     elem.innerHTML = innerHTML;
   });
 
