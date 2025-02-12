@@ -1,3 +1,21 @@
+initHomePageAnime();
+function initHomePageAnime() {
+  const tl = gsap.timeline();
+
+  tl.from("nav", {
+    y: "-100",
+    duration: 0.5,
+    ease: Power4,
+  });
+
+  tl.from(".hero-top-heading > div> span", {
+    x: "-100%",
+    stagger: 0.1,
+    duration: 0.5,
+    ease: Power4,
+  });
+}
+
 initMarquee();
 function initMarquee() {
   document.querySelectorAll(".marquee").forEach((marquee) => {
@@ -146,7 +164,7 @@ function showRecentWorkAndAnimate() {
       gsap.to(imgContainer, {
         scale: 1,
         opacity: 1,
-        left: clientX -divBoundings.left,
+        left: clientX - divBoundings.left,
         top: clientY - divBoundings.top,
         rotate: gsap.utils.clamp(-20, 20, diffX),
       });
@@ -158,5 +176,32 @@ function showRecentWorkAndAnimate() {
         opacity: 0,
       });
     });
+  });
+}
+
+initParaTypoEffect();
+function initParaTypoEffect() {
+  document.querySelectorAll(".typo").forEach((elem) => {
+    const textContent = elem.textContent;
+
+    let innerHTML = "";
+
+    textContent
+      .split("")
+      .forEach((item) => (innerHTML += `<span>${item}</span>`));
+
+    console.log(textContent);
+    elem.innerHTML = innerHTML;
+  });
+
+  gsap.from(".typo > span", {
+    opacity: 0,
+    stagger: 0.002,
+    scrollTrigger: {
+      trigger: ".typo ",
+      scroller: "main",
+      start: "50% 90%",
+      end: "50%, 50%",
+    },
   });
 }
